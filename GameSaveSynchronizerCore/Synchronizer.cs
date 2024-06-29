@@ -9,12 +9,12 @@ using System.Text.Json;
 namespace GameSaveSynchronizerCore {
     public static class Synchronizer {
 
-        private static string[] Scopes = {
+        private static readonly string[] Scopes = [
             DriveService.Scope.DriveFile,
             DriveService.Scope.DriveMetadataReadonly 
-        };
+        ];
 
-        private static string ApplicationName = "Game Save Synchronizer";
+        private static readonly string ApplicationName = "Game Save Synchronizer";
 
         private static DriveService? _service;
         private static FolderData? _workingFolder = null;
@@ -81,7 +81,7 @@ namespace GameSaveSynchronizerCore {
             string tokenPath = Path.Combine(secretsPath, "token");
             var tokenStore = new FileDataStore(tokenPath, true);
 
-            createDirectories(secretsPath);
+            CreateDirectories(secretsPath);
 
             UserCredential credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
                 GoogleClientSecrets.FromFile(credPath).Secrets,
@@ -99,7 +99,7 @@ namespace GameSaveSynchronizerCore {
             });
         }
 
-        private static void createDirectories(string secretsPath) {
+        private static void CreateDirectories(string secretsPath) {
             if (!Directory.Exists(secretsPath)) {
                 Directory.CreateDirectory(secretsPath);
             }
