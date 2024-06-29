@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameSaveSynchronizerConsole", "GameSaveSynchronizerConsole\GameSaveSynchronizerConsole.csproj", "{545E1034-873F-43BC-A6E4-FEF88C59F0A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameSaveSynchronizerConsole", "GameSaveSynchronizerConsole\GameSaveSynchronizerConsole.csproj", "{545E1034-873F-43BC-A6E4-FEF88C59F0A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameSaveSynchronizerCore", "GameSaveSynchronizerCore\GameSaveSynchronizerCore.csproj", "{ED9490C4-357A-4F13-B5CF-D7D716E717C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameSaveSynchronizerCore", "GameSaveSynchronizerCore\GameSaveSynchronizerCore.csproj", "{ED9490C4-357A-4F13-B5CF-D7D716E717C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

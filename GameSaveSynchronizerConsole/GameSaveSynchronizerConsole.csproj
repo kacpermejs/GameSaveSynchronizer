@@ -7,4 +7,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GameSaveSynchronizerCore\GameSaveSynchronizerCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="secrets\credentials.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
